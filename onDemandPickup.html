@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ON DEMAND</title>
+		<link rel="stylesheet" type="text/css" href="CSS/indexStyle.css">
+		<link rel="stylesheet" type="text/css" href="CSS/scheduledPickup.css">
+		<link rel="stylesheet" type="text/css" href="CSS/allServicesPage.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<script type="text/javascript" src="Java Script/temp.js"></script>
+
+	</head>
+
+	<body>
+		<div id="divAboveNavbar">
+			<marquee height="10%" width="100%" scrollamount="8" class="marquee">
+			<span style="color:green">Updates !!!!  These are the places where we have started providing our services.Kindly check the places and avail our easy servies at your convienience !!</span><span style="color:darkgreen;">Rampur Ramnagar Ramgaon</span>
+			</marquee>
+		</div>
+		<ul class="navbarHome">
+			<li><img src="Images/wmIcon.jpg"></li>
+			<li><a href="index.html">Home</a></li>
+			<li class="dropdown">
+			    <a href="allServicesPage.html" class="dropbtn">Our services</a>
+			    <div class="dropdown-content">
+			      <a href="scheduledPickup.html">Scheduled pickup</a>
+			      <a href="onDemandPickup.html">On-demand pickup</a>
+			      <a href="recycle.html">Recycling and sustainability</a>
+			    </div>
+			</li>
+			<li><a href="aboutUsPage.html">About Us</a></li>
+			<li><a href="contactUsPage.html">Contact Us</a></li>
+			<li style="text-align:right" class="dropdown">
+				<img src="Images/profile.jpg" alt="User Profile" onclick="userLogin()" id="profile" class="dropbtn">
+				<div class="dropdown-content" style="width:2vw;margin-left:7vw;">
+			      <a href="userLogin.html">Users</a>
+			      <a href="staffLogin.html">Staffs</a>
+			      <a href="adminLogin.html">Admins</a>
+			      <a href="logout.html">Logout</a>
+			     </div>
+			</li>
+		</ul>
+				
+			<div class="mainDescription flex">
+				
+				<div class="scheduledPara1">
+					<p>
+						<h3 class="workDescriptionHeaderScheduledPickup1">ON-DEMAND PICKUP</h3>
+						
+						Waste services available for your home or business, whenever and wherever you need them.
+					</p>
+				</div>
+				<div class="scheduledPickupImages">
+					<img src="Images/onDemandPickup.jpg">
+				</div>
+			</div>
+
+			<div class="checkPincode">
+				<div style="padding-top:5vh;">
+					<div id="searchPincodeHeading">CHECK AVAILABILITY</div>
+					<br />
+					<div style="margin-left:10vw" class="search">
+						<input type="text" name="pincode" placeholder="type your pincode to check availability" id="searchPincodeTextbox" maxlength="7">
+						<input type="button" name="search" value="see result" id="searchPincodeButton" onclick="checkPincodeAvailability()">
+					</div>
+				</div>
+			</div>
+
+			<div class="subDescription flex" style="margin-top:15vh;">
+				
+				<div class="subScheduledPickupImages">
+					<img src="Images/largeTrashPickup.jpg">
+				</div>
+				<div class="subScheduledPara">
+						<h3 class="workDescriptionHeaderScheduledPickup1">LARGE TRASH PICKUP</h3>
+					<p>
+						
+						When your normal trash service can't handle oversized or bulk items like furniture or appliances, Waste Management has convenient and flexible pickup options. Simply schedule the pickup and set the items out. We'll take care of the rest.
+						<br><br><br><br><br><br><br><br>
+						<span class="learnMore">Learn More ></span>
+					</p>
+				</div>
+				
+			</div>
+
+			<div class="subDescription flex" style="margin-top:15vh;">
+				<div class="subScheduledPara">
+						<h3 class="workDescriptionHeaderScheduledPickup1">TEMPORARY DUMPSTER RENTAL</h3>
+					<p>
+						
+						For those big construction jobs, or if you just have more trash than your normal pickup service can handle, we have a range of roll-off dumpster sizes that can help. Free up space and get rid of that excess waste the right way.
+						<br><br><br><br><br><br>
+						<span class="learnMore">Learn More ></span>
+					</p>
+				</div>
+				
+				<div class="subScheduledPickupImages">
+					<img src="Images/temporaryDumpsterRental.jpg">
+				</div>
+			</div>
+
+			<div class="subDescription flex" style="margin-top:15vh;">
+				
+				<div class="subScheduledPickupImages">
+					<img src="Images/bagsterBag.jpg">
+				</div>
+				<div class="subScheduledPara">
+					
+						<h3 class="workDescriptionHeaderScheduledPickup1">BAGSTER BAG</h3>
+					<p>	
+						To easily get rid of waste from those smaller projects, look no further than a Bagster bag. They fold up small for easy storage but can hold up to 3,300 pounds of waste. With Bagster, say goodbye to clutter and debris.
+						<br><br><br><br><br><br><br><br><br>
+						<span class="learnMore">Learn More ></span>
+					</p>
+				</div>
+				
+			</div>
+
+			
+
+	</body>
+</html>
+

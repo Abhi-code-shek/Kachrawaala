@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Admins Place</title>
+		<link rel="stylesheet" type="text/css" href="CSS/indexStyle.css">
+		<link rel="stylesheet" type="text/css" href="CSS/animate.css">
+		<link rel="stylesheet" type="text/css" href="CSS/afterStaffLogin.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<script type="text/javascript" src="Java Script/temp.js"></script>
+	</head>
+
+	<body>
+		<div id="divAboveNavbar">
+			<marquee height="10%" width="100%" scrollamount="8" class="marquee">
+			<span style="color:green"><span class="pulseit">Updates !!!!</span>  These are the places where we have started providing our services.Kindly check the places and avail our easy servies at your convienience !!</span><span style="color:darkgreen;">Rampur Ramnagar Ramgaon</span>
+
+			</marquee>
+		</div>
+		<ul class="navbarHome">
+			<li><img src="Images/wmIcon.jpg"></li>
+			<li><a href="index.html">Home</a></li>
+			<li class="dropdown">
+			    <a href="allServicesPage.html" class="dropbtn">Our services</a>
+			    <div class="dropdown-content">
+			      <a href="scheduledPickup.html">Scheduled pickup</a>
+			      <a href="onDemandPickup.html">On-demand pickup</a>
+			      <a href="recycle.html">Recycling and sustainability</a>
+			    </div>
+			</li>
+			<li><a href="aboutUsPage.html">About Us</a></li>
+			<li><a href="contactUsPage.html">Contact Us</a></li>
+			<li style="text-align:right" class="dropdown">
+				<img src="Images/profile.jpg" alt="User Profile" id="profile" class="dropbtn">
+				<div class="dropdown-content" style="width:2vw;margin-left:7vw;">
+			      <a href="userLogin.html">Users</a>
+			      <a href="staffLogin.html">Staffs</a>
+			      <a href="adminLogin.html">Admins</a>
+			      <a href="logout.html">Logout</a>
+			     </div>
+			</li>
+		</ul>
+		<center><h3 class="h3Header">Welcome to our family :)</h3></center>
+		<div class="flex">
+			<div class="buttonDivision">
+				<center><h3 class="h3Header">Update your profile!!</h3></center>
+				<p style="text-align:justify;">Please update your profile before posting any request as requests can only be accepted if your profile is updated! We reuest you to fill in the important information required for us to provide you better experiences.We want best for you!!</p>
+				<br />
+				<center>
+					<input type="button" value="UPDATE YOUR PROFILE" onclick="adminProfileUpdate()" id="browseAllServicesButton">
+				</center>
+			</div>
+			<div class="buttonDivision">
+				<center><h3 class="h3Header">Verify new staffs and provide slots!</h3></center>
+				<p style="text-align:justify;">Please update your profile before posting any request as requests can only be accepted if your profile is updated! We reuest you to fill in the important information required for us to provide you better experiences.We want best for you!!</p>
+				<br />
+				<center>
+					<input type="button" value="SEE THE NEW STAFFS" onclick="adminVerifyStaffs()" id="browseAllServicesButton">
+				</center>
+			</div>
+		</div>
+	</body>
+</html>

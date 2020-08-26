@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>About US Page</title>
+		<link rel="stylesheet" type="text/css" href="CSS/indexStyle.css">
+		<link rel="stylesheet" type="text/css" href="CSS/animate.css">
+		<link rel="stylesheet" type="text/css" href="CSS/allServicesPage.css">
+		<link rel="stylesheet" type="text/css" href="CSS/aboutUsStyle.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<script type="text/javascript" src="Java Script/temp.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<style>
+			h2 u{
+				color: #4f4f58;
+    			font-size: 45px;
+    			font-family: DIN W03 Cond Bold,Arial Narrow,Arial,sans-serif;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="divAboveNavbar">
+			<marquee height="10%" width="100%" scrollamount="8" class="marquee">
+			<span style="color:green"><span class="pulseit">Updates !!!!</span>  These are the places where we have started providing our services.Kindly check the places and avail our easy servies at your convienience !!</span><span style="color:darkgreen;">Rampur Ramnagar Ramgaon</span>
+			</marquee>
+		</div>
+		<ul class="navbarHome">
+			<li><img src="Images/wmIcon.jpg"></li>
+			<li><a href="index.html">Home</a></li>
+			<li class="dropdown">
+			    <a href="allServicesPage.html" class="dropbtn">Our services</a>
+			    <div class="dropdown-content">
+			      <a href="scheduledPickup.html">Scheduled pickup</a>
+			      <a href="onDemandPickup.html">On-demand pickup</a>
+			      <a href="recycle.html">Recycling and sustainability</a>
+			    </div>
+			</li>
+			<li><a href="aboutUsPage.html">About Us</a></li>
+			<li><a href="contactUsPage.html">Contact Us</a></li>
+			<li style="text-align:right" class="dropdown">
+				<img src="Images/profile.jpg" alt="User Profile" onclick="userLogin()" id="profile" class="dropbtn">
+				<div class="dropdown-content" style="width:2vw;margin-left:7vw;">
+			      <a href="userLogin.html">Users</a>
+			      <a href="staffLogin.html">Staffs</a>
+			      <a href="adminLogin.html">Admins</a>
+			      <a href="logout.html">Logout</a>
+			     </div>
+			</li>
+		</ul>
+		<center><h2><u>SEE WHAT WE ARE ALL ABOUT</u></h2></center>
+
+		<div id="aboutUsContent">
+			<p>
+				We are a team who feel that proper management of waste and their rightful disposal is of utmost importance. We help in securing the future of this planet by preventing pollution and inappropriate disposal of waste.
+				<br /><br />
+				The world is changing, so we need to change for a sustainable tomorrow.  This ideal drives us as a team. Good isn't good enough for us, as we work towards getting better than yesterday, because our world needs every bit of help that it can get.
+				<br /><br />
+				We value our environment, not just the ecosystem, but also in the team. We give utmost importance to our people and customers and strive every day to help them have a better day, mainly by managing their wastes. We embrace and cultivate respect, trust and diversity of thoughts and people.
+				<br /><br />
+			</p>
+		</div>
+
+		<div class="about">	
+			<div class="aboutImagesSection"> 
+				<img src="Images/scheduledPickup1.jpg" height="200px" width="200px" class="aboutImages">
+				<span>Recycling</span>
+			</div>
+			<div class="aboutImagesSection"> 
+				<img src="Images/scheduledPickup.jpeg" height="200px" width="200px" class="aboutImages">
+				<span>Scheduled Pickup</span>
+			</div>
+			<div class="aboutImagesSection"> 
+				<img src="Images/scheduledPickup.jpeg" height="200px" width="200px" class="aboutImages">
+				<span>Scheduled Pickup</span>
+			</div>
+			<div class="aboutImagesSection"> 
+				<img src="Images/recyclingAndSustainabilty.jpg" height="200px" width="200px" class="aboutImages">
+				<span>Temporary Dumpster</span>
+			</div>
+			<div class="aboutImagesSection"> 
+				<img src="Images/temporaryDumpsterRental.jpg" height="200px" width="200px" class="aboutImages">
+				<span>Temporary Dumpster</span>
+			</div>
+		</div>
+	</body>
+</html>

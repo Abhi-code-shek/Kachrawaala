@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SCEDULED PICKUP</title>
+		<link rel="stylesheet" type="text/css" href="CSS/indexStyle.css">
+		<link rel="stylesheet" type="text/css" href="CSS/scheduledPickup.css">
+		<link rel="stylesheet" type="text/css" href="CSS/allServicesPage.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<script type="text/javascript" src="Java Script/temp.js"></script>
+	</head>
+
+	<body>
+		<div id="divAboveNavbar">
+			<marquee height="10%" width="100%" scrollamount="8" class="marquee">
+			<span style="color:green">Updates !!!!  These are the places where we have started providing our services.Kindly check the places and avail our easy servies at your convienience !!</span><span style="color:darkgreen;">Rampur Ramnagar Ramgaon</span>
+
+			</marquee>
+		</div>
+		<ul class="navbarHome">
+			<li><img src="Images/wmIcon.jpg"></li>
+			<li><a href="index.html">Home</a></li>
+			<li class="dropdown">
+			    <a href="allServicesPage.html" class="dropbtn">Our services</a>
+			    <div class="dropdown-content">
+			      <a href="scheduledPickup.html">Scheduled pickup</a>
+			      <a href="onDemandPickup.html">On-demand pickup</a>
+			      <a href="recycle.html">Recycling and sustainability</a>
+			    </div>
+			</li>
+			<li><a href="aboutUsPage.html">About Us</a></li>
+			<li><a href="contactUsPage.html">Contact Us</a></li>
+			<li style="text-align:right" class="dropdown">
+				<img src="Images/profile.jpg" alt="User Profile" onclick="userLogin()" id="profile" class="dropbtn">
+				<div class="dropdown-content" style="width:2vw;margin-left:7vw;">
+			      <a href="userLogin.html">Users</a>
+			      <a href="staffLogin.html">Staffs</a>
+			      <a href="adminLogin.html">Admins</a>
+			      <a href="logout.html">Logout</a>
+			     </div>
+			</li>
+		</ul>
+				
+			<div class="mainDescription flex">
+				
+				<div class="scheduledPara1">
+					<p>
+						<h3 class="workDescriptionHeaderScheduledPickup1">SCHEDULED PICKUP</h3>
+						
+						Scheduled and on-demand options for home and business from Vellores' largest environmental solutions provider.
+					</p>
+				</div>
+				<div class="scheduledPickupImages">
+					<img src="Images/scheduledPickup1.jpg">
+				</div>
+			</div>
+
+			<div class="checkPincode">
+				<div style="padding-top:5vh;">
+					<div id="searchPincodeHeading">CHECK AVAILABILITY</div>
+					<br />
+					<div style="margin-left:10vw" class="search">
+						<input type="text" name="pincode" placeholder="type your pincode to check availability" id="searchPincodeTextbox" maxlength="7">
+						<input type="button" name="search" value="see result" id="searchPincodeButton" onclick="checkPincodeAvailability()">
+					</div>
+				</div>
+			</div>
+
+			<div class="subDescription flex" style="margin-top:15vh;">
+				
+				<div class="subScheduledPickupImages">
+					<img src="Images/residentialCurbsidePickup.jpg">
+				</div>
+				<div class="subScheduledPara">
+						<h3 class="workDescriptionHeaderScheduledPickup1">RESIDENTIAL CURBSIDE PICKUP</h3>
+					<p>
+						
+						A wide range of scheduled trash removal and pickup services for your home, combined with our reputation for dependability, ensures that your waste is taken care of reliably and responsibly.
+						<br><br><br><br><br><br>
+						<span class="learnMore">Learn More ></span>
+					</p>
+				</div>
+				
+			</div>
+
+			<div class="subDescription flex" style="margin-top:15vh;">
+				<div class="subScheduledPara">
+						<h3 class="workDescriptionHeaderScheduledPickup1">BUSINESS WASTE PICKUP</h3>
+					<p>
+						
+						You need a partner that's reliable and focused on your needs. That's why we partner with you to find the right waste pickup option for your business.
+						<br><br><br><br><br><br>
+						<span class="learnMore">Learn More ></span>
+					</p>
+				</div>
+				
+				<div class="subScheduledPickupImages">
+					<img src="Images/businessWastePickup.jpg">
+				</div>
+			</div>
+
+			<div class="subDescription flex" style="margin-top:15vh;">
+				
+				<div class="subScheduledPickupImages">
+					<img src="Images/recycling.jpeg">
+				</div>
+				<div class="subScheduledPara">
+					
+						<h3 class="workDescriptionHeaderScheduledPickup1">RECYCLING PICKUP</h3>
+					<p>	
+						As Vellore's largest recycler, Waste Management gives you convenient and environmentally friendly options to help make sure your materials find their next best use.
+						<br><br><br><br><br><br>
+						<span class="learnMore">Learn More ></span>
+					</p>
+				</div>
+				
+			</div>
+
+			<div class="subDescription flex" style="margin-top:15vh;">
+				<div class="subScheduledPara">
+						<h3 class="workDescriptionHeaderScheduledPickup1">YARD WASTE</h3>
+					<p>
+						To maintain your beautiful landscaping, continuous maintenance is needed. We've partnered with homes and businesses all across the vellore to manage the yard waste that comes from weeding, trimming and mowing the right way.
+						<br><br><br><br><br><br>
+						<span class="learnMore">Learn More ></span>
+					</p>
+				</div>
+				
+				<div class="subScheduledPickupImages">
+					<img src="Images/yardWaste.jpg">
+				</div>
+			</div>
+
+	</body>
+</html>
+
+<!--
+<h3>font-size:30px;padding-top:20px;margin-left:55px;"</h3>
+
+ style="padding-top:20px;margin-left:55px;"
+
+->

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>KACHRAWAALA</title>
+		<link rel="stylesheet" type="text/css" href="CSS/indexStyle.css">
+		<link rel="stylesheet" type="text/css" href="CSS/animate.css">
+		<link rel="stylesheet" type="text/css" href="CSS/allServicesPage.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<script type="text/javascript" src="Java Script/temp.js"></script>
+		<script type="text/javascript" src="Java Script/request.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	
+	<body>
+		<div id="divAboveNavbar">
+			<marquee height="10%" width="100%" scrollamount="8" class="marquee">
+			<span style="color:green"><span class="pulseit">Updates !!!!</span>  These are the places where we have started providing our services.Kindly check the places and avail our easy servies at your convienience !!</span><span style="color:darkgreen;">Rampur Ramnagar Ramgaon</span>
+
+			</marquee>
+		</div>
+		<ul class="navbarHome" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+			<li><img src="Images/wmIcon.jpg"></li>
+			<li><a href="index.html">Home</a></li>
+			<li class="dropdown">
+			    <a href="allServicesPage.html" class="dropbtn">Our services</a>
+			    <div class="dropdown-content">
+			      <a href="scheduledPickup.html">Scheduled pickup</a>
+			      <a href="onDemandPickup.html">On-demand pickup</a>
+			      <a href="recycle.html">Recycling and sustainability</a>
+			    </div>
+			</li>
+			<li><a href="aboutUsPage.html">About Us</a></li>
+			<li><a href="contactUsPage.html">Contact Us</a></li>
+			<li style="text-align:right" class="dropdown">
+				<img src="Images/profile.jpg" alt="User Profile" onclick="userLogin()" id="profile" class="dropbtn">
+				<div class="dropdown-content" style="width:2vw;margin-left:7vw;">
+			      <a href="userLogin.html">Users</a>
+			      <a href="staffLogin.html">Staffs</a>
+			      <a href="adminLogin.html">Admins</a>
+			      <a href="logout.html">Logout</a>
+			     </div>
+			</li>
+		</ul>
+		<div id="headerImage">
+			<div id="belowHeaderImage"><span>OUR SERVICES</span></div>
+			<img src="Images/servicesHeaderImage.jpg" alt="servicesHeaderImage">
+		</div>
+		<div id="afterHeaderImage">
+			<h2>SCHEDULED SERVICES</h2>
+			<div id="afterHeaderImageParagraph">
+				<p>FROM WASTE TO RECYCLING TO FOOD AND ORGANICS, WE HAVE THE RIGHT SCHEDULED PICKUP SERVICES FOR YOUR HOME OR BUSINESS.</p>
+			</div>
+		</div>
+		<div class="differentOtions">
+			<div class="flex">
+			<div class="buttonDivision">
+				<center><h3 class="h3Header">RESIDENTIAL CURBSIDE PICKUP</h3></center>
+				<p style="text-align:justify;">Waste management and recycling facilities for the waste generated at your home.A wide range of scheduled trash removal and pickup services for your home, ensures that your waste is taken care of reliably and responsibly.</p>
+				<br />
+				<center>
+					<input type="button" value="CLICK TO POST REQUEST" onclick="userPostRequest1()" id="browseAllServicesButton">
+				</center>
+			</div>
+			<div class="buttonDivision">
+				<center><h3 class="h3Header">BUSINESS WASTE PICKUP</h3></center><br />
+				<p style="text-align:justify;">Waste pickup and management solutions for industries and offices.
+				You need a partner that's reliable and focused on your needs. That's why we partner with you to find the right waste pickup option for your business.
+				</p>
+				<br />
+				<center>
+					<input type="button" value="CLICK TO POST REQUEST" onclick="userPostRequest2()" id="browseAllServicesButton">
+				</center>
+			</div>
+			<div class="buttonDivision">
+				<center><h3 class="h3Header">RECYCLING PICKUP</h3></center><br />
+				<p style="text-align:justify;">Convenient services for recyclable wastes.As Vellore's largest recycler, Waste Management gives you convenient and environmentally friendly options to help make sure your materials find their next best use.</p>
+				<br />
+				<center>
+					<input type="button" value="CLICK TO POST REQUEST" onclick="userPostRequest3()" id="browseAllServicesButton">
+				</center>
+			</div>
+			<div class="buttonDivision">
+				<center><h3 class="h3Header">YARD WASTE</h3></center><br />
+				<p style="text-align:justify;">Management options for waste generated in your yard like leaves, hay etc.To maintain your beautiful landscaping, continuous maintenance is needed. We've partnered with homes and businesses all across the vellore to manage the yard waste.</p>
+				<br />
+				<center>
+					<input type="button" value="CLICK TO POST REQUEST" onclick="userPostRequest4()" id="browseAllServicesButton">
+				</center>
+			</div>
+		</div>
+		</div>
+		<div id="afterHeaderImage">
+			<h2>ON-DEMAND PICKUP</h2>
+			<div id="afterHeaderImageParagraph">
+				<p>WASTE MANAGEMENT OFFERS FLEXIBLE AND RELIABLE ON-DEMAND PICKUP OPTIONS FOR THE DISPOSAL OF EVERYTHING FROM LARGE OR BULKY ITEMS TO LEFTOVER DEBRIS FROM CONSTRUCTION AND RENOVATION PROJECTS.</p>
+			</div>
+		</div>
+		<div class="differentOtions">
+			<div class="flex">
+			<div class="buttonDivision1">
+				<center><h3 class="h3Header">LARGE TRASH PICKUP</h3></center>
+				<p style="text-align:justify;">Convenient pickup of large wastes, like furniture or similar waste materials or many such bulky materials.When your normal trash service can't handle oversized or bulk items like furniture or appliances, Waste Management has convenient and flexible pickup options. Simply schedule the pickup and set the items out. We'll take care of the rest.</p>
+				<br />
+				<center>
+					<input type="button" value="CLICK TO POST REQUEST" onclick="userPostRequest5()" id="browseAllServicesButton">
+				</center>
+			</div>
+			<div class="buttonDivision1">
+				<center><h3 class="h3Header">TEMPORARY DUMPSTER RENTAL</h3></center>
+				<p style="text-align:justify;">We give out a variety of Temporary Dumpsters of different sizes on rent, for domestic and industrial waste management purposes.For those big construction jobs, or if you just have more trash than your normal pickup service can handle, we have a range of roll-off dumpster sizes that can help. Free up space and get rid of that excess waste the right way.</p>
+				<br />
+				<center>
+					<input type="button" value="CLICK TO POST REQUEST" onclick="userPostRequest6()" id="browseAllServicesButton">
+				</center>
+			</div>
+			<div class="buttonDivision1">
+				<center><h3 class="h3Header">BAGSTER BAG</h3></center>
+				<p style="text-align:justify;">To easily get rid of waste from those smaller projects, look no further than a Bagster bag. They fold up small for easy storage but can hold up to 3,300 pounds of waste. With Bagster, say goodbye to clutter and debris.Bags for any occasion, bigger than your ordinary trash can.
+				</p>
+				<br /><br /><br />
+				<center>
+					<input type="button" value="CLICK TO POST REQUEST" onclick="userPostRequest7()" id="browseAllServicesButton">
+				</center>
+			</div>
+		</div>
+		</div>
+		<div id="afterHeaderImage">
+			<h2>RECYCLING AND SUSTAINABILITY</h2>
+			<div id="afterHeaderImageParagraph">
+				<p>OUR EXPERIENCE AS VELLORE'S LARGEST RECYCLER COMBINED WITH MORE THAN 50 YEARS OF TECHNOLOGICAL INNOVATION MAKES US A LEADER IN PROVIDING SUSTAINABLE AND EFFICIENT SOLUTIONS FOR YOUR HOME, BUSINESS OR INDUSTRY.</p>
+			</div>
+		</div>
+		<div class="differentOtions">
+			<div class="flex">
+			<div class="buttonDivision1">
+				<center><h3 class="h3Header">RECYCLING PICKUP</h3></center>
+				<p style="text-align:justify;">We have convenient and trustworthy pickup options which help in managing your waste.As Vellore's largest recycler, Waste Management gives you convenient and environmentally friendly options to help make sure your materials find their next best use.</p>
+				<br /><br />
+				<center>
+					<input type="button" value="CLICK TO POST REQUEST" onclick="userPostRequest3()" id="browseAllServicesButton">
+				</center>
+			</div>
+			<div class="buttonDivision1">
+				<center><h3 class="h3Header">BULBS, BATTERIES, ELECTRONICS</h3></center>
+				<p style="text-align:justify;">From old TV remotes to batteries to compact fluorescent bulbs, we have convenient options to help you recycle those things you may not know can be recycled.Collection of dangerous wastes like used batteries, bulbs and electronic goods which can be harmful if not dealt properly by pickup or by mail.</p>
+				<br />
+				<center>
+					<input type="button" value="CLICK TO POST REQUEST" onclick="userPostRequest9()" id="browseAllServicesButton">
+				</center>
+			</div>
+			<div class="buttonDivision1">
+				<center><h3 class="h3Header">HOUSEHOLD HAZARDOUS WASTE</h3></center>
+				<p style="text-align:justify;">We use proper tools and techniques to deal with hazardous wastes that might be harmful with the household as well as the environment.Waste Management can help you manage your household hazardous waste and keep harmful elements out of our environment with our convenient home collection.</p>
+				<br />
+				<center>
+					<input type="button" value="CLICK TO POST REQUEST" onclick="userPostRequest10()" id="browseAllServicesButton">
+				</center>
+			</div>
+		</div>
+		</div>
+		<div class="differentOtions">
+			<div class="flex">
+			<div class="buttonDivision2">
+				<center><h3 class="h3Header">SUSTAINABILITY WITH WASTE MANAGEMENT</h3></center>
+				<p style="text-align:justify;">We believe in sustainability like nothing else and it is at the core of everything we do.At Waste Management, we're working tirelessly to better our planet. From hosting the Vellore's largest zero waste event each year to generating energy from our landfills to power our trucks, we're making a difference.</p>
+				<br />
+				<center>
+					<input type="button" value="CLICK TO POST REQUEST" onclick="userPostRequest11()" id="browseAllServicesButton">
+				</center>
+			</div>
+			<div class="buttonDivision2">
+				<center><h3 class="h3Header">FOOD AND ORGANIC RECYCLING</h3></center>
+				<p style="text-align:justify;">Proper techniques and methods to decrease the bad effects of waste and to use it to the most positive extent.Kachrawaala doesn't see leftover food and organics as things to be thrown out, but as resources to be harnessed for the benefit of us all. We promise to process million tons of food and organics years ahead, and so want to partner with you to manage even more.</p>
+				<br /><br />
+				<center>
+					<input type="button" value="CLICK TO POST REQUEST" onclick="userPostRequest12()" id="browseAllServicesButton">
+				</center>
+			</div>
+		</div>
+		</div>
+	</body>
+</html>

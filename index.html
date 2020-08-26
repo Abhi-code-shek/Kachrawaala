@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>KACHRAWAALA</title>
+		<link rel="stylesheet" type="text/css" href="CSS/indexStyle.css">
+		<link rel="stylesheet" type="text/css" href="CSS/animate.css">
+		<link rel="stylesheet" type="text/css" href="CSS/allServicesPage.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<script type="text/javascript" src="Java Script/temp.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	</head>
+
+	<body>
+		<div id="divAboveNavbar">
+			<marquee height="10%" width="100%" scrollamount="8" class="marquee">
+			<span style="color:green"><span class="pulseit">Updates !!!!</span>  These are the places where we have started providing our services. Kindly check the places and avail our easy servies at your convienience !!</span><span style="color:darkgreen;">Rampur Ramnagar Ramgaon</span>
+
+			</marquee>
+		</div>
+		<ul class="navbarHome">
+			<li><img src="Images/wmIcon.jpg"></li>
+			<li><a href="index.html">Home</a></li>
+			<li class="dropdown">
+			    <a href="allServicesPage.html" class="dropbtn">Our services</a>
+			    <div class="dropdown-content">
+			      <a href="scheduledPickup.html">Scheduled pickup</a>
+			      <a href="onDemandPickup.html">On-demand pickup</a>
+			      <a href="recycle.html">Recycling and sustainability</a>
+			    </div>
+			</li>
+			<li><a href="aboutUsPage.html">About Us</a></li>
+			<li><a href="contactUsPage.html">Contact Us</a></li>
+			<li style="text-align:right" class="dropdown">
+				<img src="Images/profile.jpg" alt="User Profile" onclick="userLogin()" id="profile" class="dropbtn">
+				<div class="dropdown-content" style="width:2vw;margin-left:7vw;">
+			      <a href="userLogin.html">Users</a>
+			      <a href="staffLogin.html">Staffs</a>
+			      <a href="adminLogin.html">Admins</a>
+			      <a href="logout.html">Logout</a>
+			     </div>
+			</li>
+		</ul>
+		<div id="afterNavbarDivison">
+			<div class="image1">
+				<img src="Images/homeImage.jpg" />
+				<div class="h2OnImageContainer">
+					<h2 class="h2OnImage">KACHRAWAALA: <span style="color:white;">WORKING FOR</span></h2>
+					<h2 class="h2OnImage" style="color:#FFFFFF;">A SUSTAINABLE TOMORROW</h2>
+				</div>
+ 				<div class="h2OnImageSubscriptContainer">
+					<h3 class="h2OnImageSubscript">Reliable, responsible and sustainable <br><br> waste management solutions for home <br><br> <span style="margin-left:17vw;">and business.</span></h3>
+				</div>
+ 			</div><br><br>
+			<center><h2 id="middleHeader">Residential Services in your area</h2></center><br><br>
+			<div id="workDescription" class="flex">
+				<div class="workDescriptionImages">
+					<img src="Images/scheduledPickup.jpeg">
+				</div>
+				<div class="workDescriptionParagraphs">
+					<p> 
+						<h3 class="workDescriptionHeader">SCHEDULED PICKUP SERVICES</h3>
+						<br />
+						Waste Management offers reliable, efficient trash collection and recycling pickup services that work with your schedule so you can focus on the things that matter most.
+						<br><br><span class="knowMore" onclick="openScheduledPickup()">Click here to know more..</span>
+					</p>
+				</div>
+			</div>
+			<br /> <br /><br><br>
+			<div id="workDescription" class="flex">
+				
+				<div class="workDescriptionParagraphs">
+					<p> 
+						<h3 class="workDescriptionHeader">ON-DEMAND PICKUP SERVICES</h3>
+						<br />
+						If you need to get rid of excess waste beyond your normal service needs, Waste Management is here to help. With our variety of on-demand pickup services and trash removal, just point, click and we'll come get it. Anytime, anywhere.
+						<br><br><span class="knowMore" onclick="onDemandPickup()">Click here to know more..</span>
+					</p>
+				</div>
+				<div class="workDescriptionImages">
+					<img src="Images/onDemandPickup.jpeg">
+				</div>
+			</div>
+			<br /> <br /><br><br>
+			<div id="workDescription" class="flex">
+				<div class="workDescriptionImages">
+					<img src="Images/recycling.jpeg">
+				</div>
+				<div class="workDescriptionParagraphs">
+					<p> 
+						<h3 class="workDescriptionHeader">RECYCLING AND SUSTAINABILITY SERVICES</h3>
+						<br />
+						As Vellore's largest recycler, we're committed to making our world more sustainable. From recycling collection to consulting, we'll  work together to find a forward-thinking solution that works for you.
+						<br><br><span class="knowMore" onclick="recycle()">Click here to know more..</span>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="browseAllServices flex" >
+			<input type="button" value="BROWSE ALL SERVICES" onclick="allServicesPage()" id="browseAllServicesButton">
+		</div>
+
+	<!--	<div class="browseAllServices flex">
+			<h3 class="aboutHeader">See What We're All About</h3>
+		</div>
+
+		<div class="about">	
+			<div class="aboutImagesSection"> 
+				<img src="Images/scheduledPickup1.jpg" height="200px" width="200px" class="aboutImages">
+				<span>Recycling</span>
+			</div>
+			<div class="aboutImagesSection"> 
+				<img src="Images/scheduledPickup.jpeg" height="200px" width="200px" class="aboutImages">
+				<span>Scheduled Pickup</span>
+			</div>
+			<div class="aboutImagesSection"> 
+				<img src="Images/recyclingAndSustainabilty.jpg" height="200px" width="200px" class="aboutImages">
+				<span>Temporary Dumpster</span>
+			</div>
+			<div class="aboutImagesSection"> 
+				<img src="Images/temporaryDumpsterRental.jpg" height="200px" width="200px" class="aboutImages">
+				<span>Temporary Dumpster</span>
+			</div>
+		</div>
+		<center>
+			<div class="knowMoreAboutUsButton">
+				<input type="button" value="KNOW MORE ABOUT US" id="knowMoreAboutUsButton" onclick="aboutUs()">
+			</div>
+		</center>
+		 	<div class="overlay" style="margin-top:30px;margin-left:3vw;">
+				<div class="knowMoreAboutUsParagraph">
+					<span class="knowMoreAboutUsParagraph" align="justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</span>
+				</div>
+				<div class="knowMoreAboutUsButton">
+					<input type="button" value="KNOW MORE ABOUT US" id="knowMoreAboutUsButton">
+				</div>
+			</div>
+		 	</div>
+		</div>-->
+
+		<!-- <div class="footer"> -->
+			<hr class="footer1">
+			<div class="footer2">
+				<center><h2><u>CONTACT US</u></h2></center>
+				<div>
+					<div class="linesOfContactDetails">
+						For any suggestion or advice please do contact us on these prescribed main ids down there. Just click on the link there and write your heart out to us! Whatevere suggestions you give to us it is accepted. We respect our customers!!
+					</div>
+					<div class="socialMedia">
+						<div class="flex">
+							<a href="mailto:abhishekanand.468@gmail.com?Subject=CONTACT KACHRAWALA" class="fa fa-google"></a>
+							<a href="https://www.linkedin.com/in/abhishek-anand-79359215b/" class="fa fa-linkedin"></a>
+							<a href="#" class="fa fa-instagram"></a>
+							<a href="https://www.facebook.com/profile.php?id=100007881300721&ref=bookmarks" class="fa fa-facebook"></a>
+							<a href="#" class="fa fa-twitter"></a>
+							<a href="#" class="fa fa-youtube"></a>
+							<!-- <a href="mailto:abhishekanand.468@gmail.com?Subject=CONTACT KACHRAWALA"><sup>Write To Us!</sup><img src="Images/gmail.JPG"></a>
+							<a href="mailto:swastik.panja@gmail.com?Subject=CONTACT KACHRAWALA"><sup>Write To Us!</sup><img src="Images/gmail.JPG"></a>
+							<a href="mailto:deepakmnahar@gmail.com?Subject=CONTACT KACHRAWALA"><sup>Write To Us!</sup><img src="Images/gmail.JPG"></a> -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- <hr class="footer1">
+
+			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div> -->
+
+	<!-- 	</div> -->
+
+
+
+	</body>
+
+</html>	
+

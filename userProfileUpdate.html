@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>User Profile Update Page</title>
+		<link rel="stylesheet" type="text/css" href="CSS/indexStyle.css">
+		<link rel="stylesheet" type="text/css" href="CSS/animate.css">
+		<link rel="stylesheet" type="text/css" href="CSS/userProfileUpdate.css">
+		<link rel="stylesheet" type="text/css" href="CSS/allServicesPage.css">
+		<script type="text/javascript" src="Java Script/temp.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+		<div class="modalContainer">
+			<div class="modal">
+				<p id="termsPolicy">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<input type="button" value="X" id="closeTermsPolicy" onclick="closeTermsPolicy()">
+				</p>
+
+			</div>
+		</div>
+		<div id="divAboveNavbar">
+			<marquee height="10%" width="100%" scrollamount="8" class="marquee">
+			<span style="color:green"><span class="pulseit">Updates !!!!</span>  These are the places where we have started providing our services.Kindly check the places and avail our easy servies at your convienience !!</span><span style="color:darkgreen;">Rampur Ramnagar Ramgaon</span>
+
+			</marquee>
+		</div>
+		<ul class="navbarHome" id="navbarHome">
+			<li><img src="Images/wmIcon.jpg"></li>
+			<li><a href="index.html">Home</a></li>
+			<li class="dropdown">
+			    <a href="allServicesPage.html" class="dropbtn">Our services</a>
+			    <div class="dropdown-content">
+			      <a href="scheduledPickup.html">Scheduled pickup</a>
+			      <a href="onDemandPickup.html">On-demand pickup</a>
+			      <a href="recycle.html">Recycling and sustainability</a>
+			    </div>
+			</li>
+			<li><a href="aboutUsPage.html">About Us</a></li>
+			<li><a href="contactUsPage.html">Contact Us</a></li>
+			<li style="text-align:right" class="dropdown">
+				<img src="Images/profile.jpg" alt="User Profile" id="profile" class="dropbtn">
+				<div class="dropdown-content" style="width:2vw;margin-left:7vw;">
+			      <a href="userLogin.html">Users</a>
+			      <a href="staffLogin.html">Staffs</a>
+			      <a href="adminLogin.html">Admins</a>
+			      <a href="logout.html">Logout</a>
+			     </div>
+			</li>
+		</ul>
+
+	<div class="userUpdateInfo">
+	<h1>Fill in these details<span>Help us help you better!!</span></h1>
+	<form>
+	    <div class="section"><span>1</span>Your Name</div>
+	    <div class="inner-wrap">
+	        <label>Your Full Name <input type="text" name="field1" id="userFullName"/></label>
+	    </div>
+
+	    <div class="section"><span>2</span>Phone Number</div>
+	    <div class="inner-wrap">
+	        <label>Phone Number <input type="text" name="field4" id="userPhoneNumber"/></label>
+	    </div>
+	    <div class="button-section">
+	     <input type="button" name="Save" value="Save" onclick="saveUserUpdateInfo()" id="btnSave">
+	     <input type="button" name="Terms Policy" value="Terms" onclick="showTerms()">
+	     <span class="privacy-policy">
+	     <input type="checkbox" name="field7" onclick="enableButton(this)">You agree to our Terms and Policy. 
+	     </span>
+	    </div>
+	</form>
+	</div>
+
+	</body>
+	<script>
+		function enableButton(e){
+			if($(e).prop("checked")){
+				$("#btnSave").prop("disabled",false);
+			}
+			else{
+				$("#btnSave").prop("disabled",true);
+			}
+		}
+		function showTerms(){
+			$('.modalContainer').css("display","block");
+		}
+		function closeTermsPolicy(){
+			$('.modalContainer').css("display","none");
+		}
+		$(document).ready(function(){
+			$('.modalContainer').css("display","none");
+			$("#btnSave").prop("disabled",true);
+		});
+	</script>
+</html>
