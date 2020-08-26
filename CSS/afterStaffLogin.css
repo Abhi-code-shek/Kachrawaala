@@ -1,0 +1,54 @@
+html{
+	scroll-behavior:smooth;
+}
+
+.buttonDivision{
+	margin: 2%;
+	margin-top: 7vh;
+	margin-left: 2vw;
+	height: 55vh;
+	width: 40vw;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.19), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+	background-color: #FFFFFF;
+	transition: 0.3s;
+	padding: 5px;
+	border-radius: 10px;
+}
+.buttonDivision {
+	border-style: solid;
+	color: green;
+}
+.buttonDivision:hover{
+	transform: scale(1.1);
+	background-color: #cc99cc;
+}
+.flex{
+	display: flex;
+}
+.h3Header{
+	font-family: Inter Regular,Arial,sans-serif;
+	color: #67696d;
+	-webkit-font-smoothing: antialiased;
+	font-size: 28px;
+	letter-spacing: 1.5;
+	line-height: 1.25;
+	text-decoration: underline;
+}
+#browseAllServicesButton {
+	border: 2px solid #1D890A;
+	height: 3.125rem;
+	width: 20vw;
+	color: #FFFFFF;
+	background-color: #1D890A;
+	text-align: center;
+	cursor: pointer;
+	font: Arial;
+	font-size: 1rem; 
+	font-family: Inter Bold,Arial,sans-serif;
+    font-weight: 550;
+    opacity: .7;
+	border-radius: 5px;
+}
+#browseAllServicesButton:hover{
+	opacity: 1;
+}

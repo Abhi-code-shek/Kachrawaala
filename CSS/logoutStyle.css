@@ -1,0 +1,59 @@
+/*body {
+   background-image: url("Images/green_dust_scratch.png");
+}*/
+
+h2{
+  color: rgb(79, 79, 88);
+  font-family: DIN W03 Medium,Arial Narrow,Arial,sans-serif;
+  font-size: 40px;
+  line-height: 1.17;
+  text-decoration: underline;
+}
+h2 > button {
+  margin-top: 2%;
+}
+
+.button {
+  margin-top: 4%;
+  border-radius: 5px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 65px;
+  padding: 20px;
+  width: 750px;
+  height: 380px;
+  transition: all 0.5s;
+  cursor: pointer;
+  /*margin: 5px;*/
+}
+.button:hover{
+  border-radius: 50%;
+  border-color: none;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}

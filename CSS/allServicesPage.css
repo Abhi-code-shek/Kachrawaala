@@ -1,0 +1,146 @@
+#headerImage {
+	width: 100vw;
+	background-color: transparent;
+	width: 100vw;
+	height: 55vh;
+	background-repeat: no-repeat;
+	position:relative;
+	margin-right: 20px;
+	z-index: 0.5;
+}
+#headerImage img{
+	position: absolute;
+	height: 90%;
+	width: 90%;
+	z-index: 1;
+	margin-left: 65px;
+	//margin-top: 30px;
+}
+#belowHeaderImage{
+	margin-top: 5px;
+	height: 10vh;
+	width: 100vw;
+	background-color: #FFFFFF;
+	z-index: 0;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.19), 0 6px 20px 0 #FFFFFF;
+	
+}
+#belowHeaderImage span{
+	color: #4f4f58;
+	font-weight: bold;
+	font-family: DIN W03 Cond Bold,Arial Narrow,Arial,sans-serif;
+	font-size: 28px;
+	margin-left: 6vw;
+	text-decoration: underline;
+}
+#afterHeaderImage h2{
+	margin-top: 8vh;
+	margin-left: 5vw;
+	font-size: 35px;
+	color: #4F4F58;
+	font-weight: bold;
+	font-family: DIN W03 Bold,Arial Narrow,Arial,sans-serif;
+	text-decoration: underline;
+    line-height: 1.22;
+    color: rgb(79, 79, 88);
+}
+#afterHeaderImageParagraph{
+	width: 60vw;
+}
+#afterHeaderImage p{
+	text-decoration: none;
+	font-family: DIN W03 Bold,Arial Narrow,Arial,sans-serif;
+	color: #4F4F58;
+	margin-left: 5vw;
+	font-size: 20px;
+	font-size: 18px;
+    line-height: 1.22;
+    color: rgb(79, 79, 88);
+    font-weight: 550;
+}
+.differentOtions{
+	height: 70vh;
+	width: 100vw;
+	background-color: #FFFFFF;
+}
+
+.buttonDivision{
+	margin-top: 7vh;
+	margin-left: 0.8vw;
+	height: 50vh;
+	width: 23vw;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.19), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+	background-color: #FFFFFF;
+	transition: 0.3s;
+	padding: 5px;
+	font-family: Inter Regular,Arial,sans-serif;
+	color: #212519;
+}
+.h3Header{
+	font-family: Inter Regular,Arial,sans-serif;
+	color: #4F4F58;
+	-webkit-font-smoothing: antialiased;
+	font-size: 20px;
+	letter-spacing: 1.5;
+	line-height: 1.25;
+	text-decoration: underline;
+} 
+.buttonDivision:hover{
+	transform: scale(1.1);
+	background-color: #cccccc;
+	border-radius: 0px;
+}
+.flex{
+	display: flex;
+}
+#browseAllServicesButton {
+	border: 2px solid #1D890A;
+	height: 3.125rem;
+	width: 20vw;
+	color: #FFFFFF;
+	background-color: #1D890A;
+	text-align: center;
+	cursor: pointer;
+	font: Arial;
+	font-size: 1rem; 
+	font-family: Inter Bold,Arial,sans-serif;
+    font-weight: 550;
+    opacity: .8;
+}
+#browseAllServicesButton:hover{
+	opacity: 1;
+}
+.buttonDivision1{
+	margin-top: 7vh;
+	margin-left: 1.9vw;
+	height: 50vh;
+	width: 30vw;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.19), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+	background-color: #FFFFFF;
+	transition: 0.3s;
+	padding: 5px;
+	font-family: Inter Regular,Arial,sans-serif;
+	color: #212519;
+}
+.buttonDivision1:hover{
+	transform: scale(1.1);
+	background-color: #cccccc;
+	border-radius: 10px;
+}
+.buttonDivision2{
+	margin-top: 0;
+	margin-left: 10vw;
+	height: 50vh;
+	width: 30vw;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.19), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+	background-color: #FFFFFF;
+	transition: 0.3s;
+	padding: 5px;
+	font-family: Inter Regular,Arial,sans-serif;
+	color: #212519;
+}
+.buttonDivision2:hover{
+	transform: scale(1.1);
+	background-color: #cccccc;
+	border-radius: 0px;
+}

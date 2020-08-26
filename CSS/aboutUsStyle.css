@@ -1,0 +1,20 @@
+#aboutUsContent {
+	//box-shadow: 2px 2px 5px 3px grey;
+	margin: 4%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.19), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+	background-color: #FFFFFF;
+	transition: 0.3s;
+	padding: 5px;
+	font-family: Inter Regular,Arial,sans-serif;
+	color: #212519;
+}
+
+#aboutUsContent:hover{
+	transform: scale(1.1);
+	background-color: #cccccc;
+	border-radius: 0px;
+}
+
+#aboutUsContent > p {
+	margin: 1%;
+}
